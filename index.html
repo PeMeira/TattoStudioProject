@@ -40,30 +40,22 @@
             <nav class="navbar active">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <a href="#" class="header-link">Home</a>
+                        <a href="#" class="navbar-link">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="header-link">Sobre</a>
+                        <a href="#" class="navbar-link">Sobre</a>
                     </li>
                     <li>
-                        <a href="#" class="header-link">Portfólio</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header-link">Contato</a>
+                        <a href="#" class="navbar-link">Portfólio</a>
                     </li>
                     <!-- dropdown -->
                     <li class="dropdown-item">
-                        <div class="navbar-link">
+                        <div class="navbar-link dropdown-toggle" data-dropdown-toggle>
                             Serviços
                             <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
                         </div>
 
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="#" class="dropdown-link">
-                                    Tatuagem
-                                </a>
-                            </li>
                             <li>
                                 <a href="#" class="dropdown-link">
                                     Oriental
@@ -102,10 +94,21 @@
 
             <a href="#" class="btn">Login</a>
 
+            <button class="search-btn" id="searchToggle" aria-label="Buscar">
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+
             <button class="nav-toggle-btn" aria-label="menu-mobile">
                 <ion-icon name="menu-outline"></ion-icon>
             </button>
         </div>
     </header>
+
+    <!-- Banner -->
+     <section class="banner">
+        <video autoplay muted loop>
+            <source src="assets/video/banner.mp4"/>
+        </video>
+     </section>
 </body>
 </html>
