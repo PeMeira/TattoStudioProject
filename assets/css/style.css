@@ -331,7 +331,8 @@ body {
   color: var(--white-color);
   text-decoration: none;
   font-size: large;
-  padding: 0.8rem 1.2 rem;
+  padding-left: 0.5rem;
+  padding: 0.9rem 1.2 rem;
   font-size: var(--fs-8);
   letter-spacing: 1px;
   transition: background 0.3s, color 0.3s;
@@ -339,8 +340,72 @@ body {
 }
 
 .dropdown-link:hover {
-  background: var(--gradient1);
+  background: var(--black-color-lighten);
   color: var(--text-golden);
+}
+
+/*Overlay busca*/
+.search-overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e0e;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  flex-direction: column;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/*Input*/
+.search-container {
+  width: 90%;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  color: rgb(74, 137, 255);
+}
+
+.search-input::placeholder {
+  color: rgba(74, 137, 255, 0.377);
+}
+
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--text-golden);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* BANNER */

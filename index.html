@@ -20,8 +20,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Script -->
-    <script src="assets/js/script.js"></script>
+   
 
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -35,7 +34,6 @@
             <a href="#" class="logo">
                 <img src="assets/img/logo.png" alt="Kanagawa Studio Logo">
             </a>
-
             <!-- Nav Menu -->
             <nav class="navbar active">
                 <ul class="navbar-list">
@@ -101,6 +99,20 @@
             <button class="nav-toggle-btn" aria-label="menu-mobile">
                 <ion-icon name="menu-outline"></ion-icon>
             </button>
+
+            <!-- Overlay da Busca -->
+             <div class="search-overlay" id="searchOverlay">
+                <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <div class="search-container">
+                    <input
+                    type="text"
+                    placeholder="O que você está procurando?"
+                    class="search-input"
+                    autofocus/>
+                </div>
+             </div>
         </div>
     </header>
 
@@ -110,5 +122,8 @@
             <source src="assets/video/banner.mp4"/>
         </video>
      </section>
+
+      <!-- Script -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
