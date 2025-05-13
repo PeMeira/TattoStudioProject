@@ -21,11 +21,6 @@
      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
    
-
-    <!-- IONICONS -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </head>
 <body>
     <!-- Header -->
@@ -125,5 +120,187 @@
 
       <!-- Script -->
     <script src="assets/js/script.js"></script>
+
+    <!--Galeria de imagens-->
+    <section class="section gallery" id="studio">
+        <div class="container-galeria">
+            <p class="section-subtitle text-center">Nosso Trabalho</p>
+            <h2 class="h2 text-center">Confira o trabalho dos nossos artistas</h2>
+        </div>
+
+        <div class="galeria">
+            <img src="assets/img/tattoo1.jpg" alt="foto1">
+            <img src="assets/img/tattoo2.jpg" alt="foto2">
+            <img src="assets/img/tattoo3.jpg" alt="foto3">
+            <img src="assets/img/tattoo4.jpg" alt="foto4">
+        </div>
+
+        <div class="botao-ver-mais">
+            <a href="#" class="btn-ver-mais" title="Ver galeria">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </a>
+        </div>
+
+    <!--Lightbox-->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="imagem ampliada" id="lightbox-img">
+    </div>
+    </section>
+
+    <!--Serviços-->
+    <section class="section service" aria-label="service">
+        <div class="container-serv">
+        <div class="service-title">
+            <p class="section-subtitle text-center">Nossos Serviços</p>
+            <h2 class="h2 section-title text-center">O que oferecemos</h2>
+        </div>
+            <!--Service Cards-->
+            <ul class="service-list">
+
+                <!--Card 01-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="./assets/img/tattoo-machine.png" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Tatuagem</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--Card 02-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/laser.png" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Laser</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--Card 03-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/andorinha.png" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Cobertura</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--IMG Centro-->
+                <li class="service-banner">
+                    <figure>
+                        <img src="" alt="" class="w-100">
+                    </figure>
+                </li>
+
+                <!--Card 04-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/piercing.png" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Piercing</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--Card 05-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/forma-de-pedra-preciosa-vista-lateral-para-joias.png" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Jóias</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--Card 06-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/botox.png" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Estética</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- LOGIN -->
+     <section class="container-login">
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required/>
+                        <label>Usuário</label>
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" required/>
+                        <label>Senha</label>
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </div>
+
+                    <button type="submit" class="btn btn-login">Entrar</button>
+
+                    <div class="logreg-link">
+                        <p>
+                            Não possui uma conta? 
+                            <a href="#" class="register-link"></a>Clique aqui!</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </section>
+
+    <!-- SCRIPT -->
+     <script src="assets/js/script.js"></script>
+
+     <!-- IONICONS -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
 </body>
 </html>
